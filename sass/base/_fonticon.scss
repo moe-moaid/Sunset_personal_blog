@@ -1,0 +1,66 @@
+/*
+  @package sunsettheme
+*/
+/*
+	Font Icon
+	---------------------------------------------------
+*/
+@font-face {
+  font-family: 'sunset-icon';
+  src:  url('../fonts/sunset-icon.eot?u3ivsr');
+  src:  url('../fonts/sunset-icon.eot?u3ivsr#iefix') format('embedded-opentype'),
+    url('../fonts/sunset-icon.ttf?u3ivsr') format('truetype'),
+    url('../fonts/sunset-icon.woff?u3ivsr') format('woff'),
+    url('../fonts/sunset-icon.svg?u3ivsr#sunset-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.sunset-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'sunset-icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sunset-facebook:before {
+  content: "\e910";
+  color: #929292;
+}
+.sunset-googleplus:before {
+  content: "\e911";
+  color: #929292;
+}
+.sunset-twitter:before {
+  content: "\e912";
+  color: #929292;
+}
+.sunset-instagram:before {
+  content: "\ea92";
+  color: #929292;
+}
+.sunset-audio:before {content: "\e900"; }
+.sunset-chevron-left:before { content: "\e901"; }
+.sunset-chevron-right:before { content: "\e902"; }
+.sunset-close:before { content: "\e903"; }
+.sunset-comment:before { content: "\e904";  color: #929292; }
+.sunset-link:before { content: "\e905"; }
+.sunset-loading:before { content: "\e906"; }
+.sunset-logo:before { content: "\e907"; }
+.sunset-menu:before { content: "\e908"; }
+.sunset-pencil:before { content: "\e909"; }
+.sunset-pics:before { content: "\e90a"; color: #929292; }
+.sunset-search:before { content: "\e90b"; color: #bcbcbc; }
+.sunset-share:before { content: "\e90c"; color: #929292; }
+.sunset-Sunset-logo:before { content: "\e90d"; }
+.sunset-tag:before { content: "\e90e"; color: #929292; }
+.sunset-video:before { content: "\e90f"; color: #929292; }
