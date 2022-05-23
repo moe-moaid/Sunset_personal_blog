@@ -1,13 +1,14 @@
 <?php
-/*
-
-@package sunsettheme
+/**
+ * 
+ * @package sunsettheme
 
 	===============================
 		SINGLE POST PAGE 		
 	===============================
-*/
-
+ * 
+ * */
+	
 get_header(); ?>
 	
 	<div id="primary" class="content-area">

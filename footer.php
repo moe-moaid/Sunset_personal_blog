@@ -1,11 +1,13 @@
 <?php
+/**
+ * 
+ * @package sunsettheme
 
-/*
-	This is the template for the footer
-	
-	@package sunsettheme
-*/
-
+	===============================
+		FOOTER SECTION 		
+	===============================
+ * 
+ * */
 ?>
 
 <footer class="sunset-footer text-center">

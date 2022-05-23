@@ -1,11 +1,13 @@
 <?php
+/**
+ * 
+ * @package sunsettheme
 
-/*
-	This is the template for the header
-	
-	@package sunsettheme
-*/
-
+	===============================
+		HEADER SECTION		
+	===============================
+ * 
+ * */
 ?>
 
 <html <?php language_attributes(); ?>>
@@ -65,7 +67,7 @@
 				
 				<div class="nav-container d-none d-sm-block"  >
 					
-					<nav id="sunset_navigation" class="navbar navbar-sunset navbar-expand-md" role="navigation" >
+					<nav id="sunset_navigation" class="navbar navbar-sunset navbar-expand-md <?php echo sunset_sticky_navbar_option(); ?>" role="navigation" >
 					  <div  class="container collapse navbar-collapse ms-auto me-auto" >
 					        <?php
 					        wp_nav_menu( array(

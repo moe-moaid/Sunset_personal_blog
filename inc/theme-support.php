@@ -246,12 +246,8 @@ add_filter( 'the_content', 'sunset_share_this' );
 
 function sunset_get_post_navigation() {
 
-	// if( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ):
-
 		require( get_template_directory() . '/inc/templates/sunset-comment-nav.php');
-
-	// endif;
-
+	
 }
 
 function mailtrap($phpmailer) {

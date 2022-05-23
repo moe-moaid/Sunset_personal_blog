@@ -1,10 +1,13 @@
 <?php 
+/**
+ * 
+ * @package sunsettheme
 
-/*
-
-@package sunsettheme
-
-*/
+	===============================
+		SIDEBAR PAGE 		
+	===============================
+ * 
+ * */
 
 if ( ! is_active_sidebar('sunset-sidebar') ){
 	return;

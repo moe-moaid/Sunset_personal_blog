@@ -1,10 +1,13 @@
 <?php 
+/**
+ * 
+ * @package sunsettheme
 
-/*
-
-@package sunsettheme
-
-*/
+	===============================
+		COMMENTS SECTION 		
+	===============================
+ * 
+ * */
 
 if( post_password_required() ){
 	return;

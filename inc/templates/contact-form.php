@@ -1,4 +1,4 @@
-<form id="sunsetContacForm" class="needs-validation sunset-contact-form" novalidate action="#" method="post" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
+<form id="sunsetContacForm" class="needs-validation sunset-contact-form <?php echo sunset_activate_contact_form_option(); ?>" novalidate action="#" method="post" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
 
 	<div class="text-center">
 		<img src="<?php echo get_template_directory_uri() . '/img/paper-plane.png '; ?>">

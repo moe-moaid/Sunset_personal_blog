@@ -1,12 +1,13 @@
 <?php
-/*
-
-@package sunsettheme
+/**
+ * 
+ * @package sunsettheme
 
 	===============================
 		ARCHIVE PAGE 		
 	===============================
-*/
+ * 
+ * */
 
 get_header(); ?>
 	

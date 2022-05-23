@@ -1,16 +1,15 @@
 <?php
 
 global $detect;
-
-/*
-
-@package sunsettheme
+/**
+ * 
+ * @package sunsettheme
 
 	===============================
 		GALLERY POST FORMAT
 	===============================
-*/
-
+ * 
+ * */
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'sunset-format-gallery' ); ?>>

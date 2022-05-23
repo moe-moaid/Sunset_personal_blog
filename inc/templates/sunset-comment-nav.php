@@ -1,8 +1,9 @@
-<?php/*
-
-@package sunsettheme
-
-*/
+<?php
+/**
+ * 
+ * @package sunsettheme
+ * 
+ * */ 
 ?>
 <nav class="commnet-navigation" role="navigation">
 	<div class="row">

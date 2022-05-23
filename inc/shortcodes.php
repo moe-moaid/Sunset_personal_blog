@@ -1,17 +1,14 @@
 <?php
-
-/*
-
-@package sunsettheme
+/**
+ * 
+ * @package sunsettheme
 
 	===============================
-		SHORTCODE Options
+		SHORTCODE Options 		
 	===============================
-*/
-	?>
-	
+ * 
+ * */
 
-<?php
 function sunset_tooltip( $atts, $content = null ){
 
 	//[tooltip placement="top" title="This is the title"]This is the content[/tooltip]

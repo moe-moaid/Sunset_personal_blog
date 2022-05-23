@@ -1,13 +1,13 @@
 <?php
-/*
-
-@package sunsettheme
+/**
+ * 
+ * @package sunsettheme
 
 	===============================
 		STANDARD POST FORMAT
 	===============================
-*/
-
+ * 
+ * */
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

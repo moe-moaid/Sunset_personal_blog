@@ -130,19 +130,32 @@ jQuery(document).ready( function($){
 
 	} );
 
-	/* sticky navbar function */
-	window.onscroll = function() {sunset_sticky_navbar()};
+		/* sticky navbar function */
 
-	var navbar = document.getElementById("sunset_navigation");
-	var sticky = navbar.offsetTop+200;
+	if ( $("#sunset_navigation").hasClass("sunset-sticky-navigation") ){
 
-	function sunset_sticky_navbar() {
-	  if (window.pageYOffset >= sticky) {
-	    navbar.classList.add("sunset-sticky-navigation")
-	  } else {
-	    navbar.classList.remove("sunset-sticky-navigation");
-	  }
+		window.onload = function() {sunset_sticky_navbar()};
+		window.onscroll = function() {sunset_sticky_navbar()};
+
+			var navbar = document.getElementById("sunset_navigation");
+			var sticky = navbar.offsetTop+250;
+
+			function sunset_sticky_navbar() {
+
+
+			  if (window.pageYOffset >= sticky) {
+			    navbar.classList.add("sunset-sticky-navigation");
+			    console.log( "the class added" );
+			  } else {
+			    navbar.classList.remove("sunset-sticky-navigation");
+			    console.log ( "the class removed" );
+			  }
+			}
+
 	}
+
+	
+	
 
 	/* helper functions */
 	function revealPosts(){

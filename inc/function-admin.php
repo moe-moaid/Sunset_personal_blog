@@ -1,13 +1,13 @@
 <?php 
+/**
+ * 
+ * @package sunsettheme
 
-/*
-
-@package sunsettheme
-
-	=====================
-		ADMIN PAGE
-	=====================
-*/
+	===============================
+		ADMIN PAGE 		
+	===============================
+ * 
+ * */
 
 function sunset_add_admin_page() {
 	//Generate Sunset Main Admin Page
@@ -70,12 +70,14 @@ function sunset_custom_settings() {
 	register_setting( 'sunset-theme-support', 'post_formats' );
 	register_setting( 'sunset-theme-support', 'custom_header' );
 	register_setting( 'sunset-theme-support', 'custom_background' );
+	register_setting( 'sunset-theme-support', 'sticky_navbar' );
 	
 	add_settings_section('sunset-theme-options', 'Theme Options', 'sunset_theme_options', 'moe_sunset_theme');
 	
 	add_settings_field('post-format', 'Post Formats', 'sunset_post_formats', 'moe_sunset_theme', 'sunset-theme-options' );
 	add_settings_field('custom-header', 'Custom Header', 'sunset_custom_header', 'moe_sunset_theme', 'sunset-theme-options' );
 	add_settings_field('custom-background', 'Custom Background', 'sunset_custom_background', 'moe_sunset_theme', 'sunset-theme-options' );
+	add_settings_field('sticky_navbar', 'Sticky Navigation Bar', 'sunset_sticky_navbar', 'moe_sunset_theme', 'sunset-theme-options' );
 	
 	//Contact Form Options
 	register_setting( 'sunset-contact-options', 'activate_contact' );
@@ -120,6 +122,15 @@ function sunset_activate_contact(){
 	echo '<lable><input type="checkbox" id="activate_contact" name="activate_contact" value="1" '.$checked.' /></lable>';
 }
 
+function sunset_activate_contact_form_option() {
+	$options = get_option( 'activate_contact' );
+	$checked = ( @$options == 1 ? 'checked' : '' );
+	$ischecked = ( $checked == 'checked' ? '' : 'visually-hidden' );
+
+	return $ischecked;
+
+}
+
 function sunset_sidebar_options() {
 	echo 'Customize your sidebar information';
 }
@@ -137,6 +148,24 @@ function sunset_custom_header() {
 	$checked = ( @$options == 1 ? 'checked' : '' );
 	echo '<lable><input type="checkbox" id="custom_header" name="custom_header" value="1" '.$checked.' /> Activate the Custom Header</lable>';
 	}
+
+function sunset_sticky_navbar() {
+
+	$options = get_option( 'sticky_navbar' );
+	
+	$checked = ( @$options == 1 ? 'checked' : '' );
+	echo '<lable><input type="checkbox" id="sticky_navbar" name="sticky_navbar" value="1" '.$checked.' /> Activate Sticky Navbar</lable>';
+
+}
+
+function sunset_sticky_navbar_option() {
+	$options = get_option( 'sticky_navbar' );
+	
+	$checked = ( @$options == 1 ? 'checked' : '' );
+	$ischecked = ( $checked == 'checked' ? 'sunset-sticky-navigation' : '' );
+
+	return $ischecked;
+}
 
 function sunset_post_formats() {
 	$options = get_option( 'post_formats' );

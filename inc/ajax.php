@@ -1,13 +1,13 @@
 <?php
-
-/*
-
-@package sunsettheme
+/**
+ * 
+ * @package sunsettheme
 
 	===============================
 		Ajax FUNCTIONS
 	===============================
-*/
+ * 
+ * */ 
 add_action( 'wp_ajax_nopriv_sunset_load_more', 'sunset_load_more' );
 add_action( 'wp_ajax_sunset_load_more', 'sunset_load_more' );
 
